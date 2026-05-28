@@ -1,117 +1,262 @@
+<!-- INDEX.HTML -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piscina Huanyu | Menú</title>
+
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Piscina Huanyu | Menú Virtual
+  </title>
+
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<header class="hero">
-  <div class="sun">☀️</div>
-  <h2>Piscina</h2>
-  <h1>HUANYU</h1>
-  <p>Menú virtual</p>
+<header class="top">
+
+  <div class="overlay"></div>
+
+  <div class="content">
+
+    <div class="sun">
+      ☀️
+    </div>
+
+    <div class="brand-small">
+      Piscina
+    </div>
+
+    <h1 class="brand">
+      HUANYU
+    </h1>
+
+    <div class="tag">
+      Menú Virtual
+    </div>
+
+  </div>
+
+  <div class="wave"></div>
+
 </header>
 
-<nav>
-  <a href="#bebidas">Bebidas</a>
-  <a href="#granizados">Granizados</a>
-  <a href="#flotadores">Flotadores</a>
-  <a href="#contacto">Contacto</a>
-</nav>
+<!-- MENU -->
 
-<section class="banner">
-  <h2>🏊 Disfruta en Piscina Huanyu</h2>
-  <p>Bebidas, snacks, granizados y accesorios para pasarla increíble.</p>
+<section class="menu-panel">
+
+  <h2>
+    📋 Menú
+  </h2>
+
+  <p>
+    Escoge una categoría
+  </p>
+
+  <div class="menu-buttons">
+
+    <a href="#bebidas">
+      🥤 Bebidas
+    </a>
+
+    <a href="#granizados">
+      🍧 Granizados
+    </a>
+
+    <a href="#ninos">
+      🎈 Flotadores
+    </a>
+
+  </div>
+
 </section>
 
-<section id="bebidas" class="categoria">
-  <h2>🥤 Sodas varios sabores</h2>
+<!-- PROMO -->
 
-  <div class="card">
-    <img src="images/soda-manzana.jpg" alt="Soda manzana verde">
-    <div>
-      <h3>Sodas saborizadas</h3>
-      <p>Manzana verde, fresa, mango, maracuyá y curazao.</p>
-      <span>$2.50</span>
-    </div>
-  </div>
+<section class="promo">
 
-  <div class="card">
-    <img src="images/mangonada.jpg" alt="Mangonada">
-    <div>
-      <h3>Mangonada con Chamoy</h3>
-      <p>Refrescante, dulce y picante.</p>
-      <span>$2.50</span>
-    </div>
-  </div>
+  <h2>
+    🏊 Bienvenidos a Piscina Huanyu
+  </h2>
+
+  <p>
+    Disfruta bebidas refrescantes,
+    granizados y accesorios.
+  </p>
+
 </section>
 
-<section id="granizados" class="categoria">
-  <h2>🍧 Granizados</h2>
+<!-- BEBIDAS -->
 
-  <div class="card">
-    <img src="images/granizado-mango.jpg" alt="Granizado de mango">
-    <div>
-      <h3>Granizados varios sabores</h3>
-      <p>Mango, fresa, maracuyá y más.</p>
-      <span>$2.50</span>
-    </div>
+<section id="bebidas" class="section">
+
+  <div class="section-title">
+
+    <h2>
+      🥤 Bebidas
+    </h2>
+
+    <span></span>
+
   </div>
+
+  <div class="grid">
+
+    <article class="card">
+
+      <span class="badge">
+        Popular
+      </span>
+
+      <img src="images/soda.jpg">
+
+      <h3>
+        Soda saborizada
+      </h3>
+
+      <p>
+        Manzana verde,
+        mango, fresa y más.
+      </p>
+
+      <div class="price">
+        $2.50
+      </div>
+
+    </article>
+
+    <article class="card">
+
+      <img src="images/mangonada.jpg">
+
+      <h3>
+        Mangonada
+      </h3>
+
+      <p>
+        Refrescante con chamoy.
+      </p>
+
+      <div class="price">
+        $2.50
+      </div>
+
+    </article>
+
+  </div>
+
 </section>
 
-<section id="flotadores" class="categoria">
-  <h2>🎈 Feliz día del niño</h2>
+<!-- GRANIZADOS -->
 
-  <div class="card">
-    <img src="images/chaleco.jpg" alt="Chaleco infantil">
-    <div>
-      <h3>Chaleco infantil</h3>
-      <p>Diseños infantiles para piscina.</p>
-      <span>$6.50</span>
-    </div>
+<section id="granizados" class="section">
+
+  <div class="section-title">
+
+    <h2>
+      🍧 Granizados
+    </h2>
+
+    <span></span>
+
   </div>
 
-  <div class="card">
-    <img src="images/flotador-princesa.jpg" alt="Flotador infantil">
-    <div>
-      <h3>Flotador infantil</h3>
-      <p>Modelos variados.</p>
-      <span>$4.50</span>
-    </div>
+  <div class="grid">
+
+    <article class="card orange">
+
+      <img src="images/granizado.jpg">
+
+      <h3>
+        Granizados
+      </h3>
+
+      <p>
+        Sabores tropicales.
+      </p>
+
+      <div class="price">
+        $2.50
+      </div>
+
+    </article>
+
   </div>
 
-  <div class="card">
-    <img src="images/spiderman.jpg" alt="Flotador Spiderman">
-    <div>
-      <h3>Flotador Spiderman</h3>
-      <p>Ideal para niños.</p>
-      <span>$4.50</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="images/bracitos.jpg" alt="Bracitos infantiles">
-    <div>
-      <h3>Bracitos infantiles</h3>
-      <p>Diseños de frutas.</p>
-      <span>$3.50</span>
-    </div>
-  </div>
 </section>
 
-<section id="contacto" class="contacto">
-  <h2>📲 Contáctanos</h2>
-  <p>Consulta disponibilidad o realiza tu pedido.</p>
-  <a class="whatsapp" href="https://wa.me/593999999999" target="_blank">
-    Escribir por WhatsApp
+<!-- FLOTADORES -->
+
+<section id="ninos" class="section">
+
+  <div class="section-title">
+
+    <h2>
+      🎈 Flotadores
+    </h2>
+
+    <span></span>
+
+  </div>
+
+  <div class="grid">
+
+    <article class="card orange">
+
+      <img src="images/flotador.jpg">
+
+      <h3>
+        Flotadores infantiles
+      </h3>
+
+      <p>
+        Diseños variados.
+      </p>
+
+      <div class="price">
+        $4.50
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section id="contacto" class="contact">
+
+  <h2>
+    📲 Contacto
+  </h2>
+
+  <p>
+    Escríbenos por WhatsApp
+  </p>
+
+  <a
+  class="whatsapp"
+  href="https://wa.me/593999999999"
+  target="_blank">
+
+    WhatsApp
+
   </a>
+
 </section>
 
 <footer>
-  <p>© Piscina Huanyu | Menú virtual</p>
+
+  © Piscina Huanyu
+
 </footer>
 
 </body>
