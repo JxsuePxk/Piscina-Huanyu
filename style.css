@@ -10,7 +10,12 @@ html{
 
 body{
   font-family:Arial, sans-serif;
-  background:linear-gradient(180deg,#c7f7ff,#ffffff,#dff9ff);
+  background:
+    linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,.78)),
+    url("images/fondo-agua.png");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
   color:#071b33;
   overflow-x:hidden;
 }
