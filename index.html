@@ -13,13 +13,6 @@
   <img src="images/banner-piscina.jpg" alt="Piscina Huanyu">
 </header>
 
-  <div class="wave"></div>
-</header>
-
-  <section class="photo-banner">
-  <img src="images/banner-piscina.png" alt="Piscina Huanyu">
-</section>
-  
 <section class="menu-panel">
   <h2>📋 Menú</h2>
   <p>Escoge una categoría</p>
@@ -43,21 +36,19 @@
   </div>
 
   <div class="grid">
-
     <article class="card" onclick="abrirProducto('Soda saborizada', '$2.50', 'Manzana verde, mango, fresa y más sabores.', 'images/soda.jpg')">
-      <img src="images/soda.jpg">
+      <img src="images/soda.jpg" alt="Soda saborizada">
       <h3>Soda saborizada</h3>
       <p>Manzana verde, mango, fresa y más.</p>
       <div class="price">$2.50</div>
     </article>
 
     <article class="card" onclick="abrirProducto('Mangonada', '$2.50', 'Refrescante mangonada con chamoy.', 'images/mangonada.jpg')">
-      <img src="images/mangonada.jpg">
+      <img src="images/mangonada.jpg" alt="Mangonada">
       <h3>Mangonada</h3>
       <p>Refrescante con chamoy.</p>
       <div class="price">$2.50</div>
     </article>
-
   </div>
 </section>
 
@@ -68,14 +59,12 @@
   </div>
 
   <div class="grid">
-
     <article class="card orange" onclick="abrirProducto('Granizado', '$2.50', 'Granizado de sabores tropicales.', 'images/granizado.jpg')">
-      <img src="images/granizado.jpg">
+      <img src="images/granizado.jpg" alt="Granizado">
       <h3>Granizado</h3>
       <p>Sabores tropicales.</p>
       <div class="price">$2.50</div>
     </article>
-
   </div>
 </section>
 
@@ -86,14 +75,12 @@
   </div>
 
   <div class="grid">
-
     <article class="card orange" onclick="abrirProducto('Flotador infantil', '$4.50', 'Diseños variados para niños.', 'images/flotador.jpg')">
-      <img src="images/flotador.jpg">
+      <img src="images/flotador.jpg" alt="Flotador infantil">
       <h3>Flotador infantil</h3>
       <p>Diseños variados.</p>
       <div class="price">$4.50</div>
     </article>
-
   </div>
 </section>
 
@@ -113,7 +100,7 @@
 <div id="modal" class="modal" onclick="cerrarProducto()">
   <div class="modal-card" onclick="event.stopPropagation()">
     <button class="cerrar" onclick="cerrarProducto()">×</button>
-    <img id="modal-img" src="">
+    <img id="modal-img" src="" alt="">
     <h2 id="modal-title"></h2>
     <p id="modal-desc"></p>
     <div id="modal-price" class="modal-price"></div>
