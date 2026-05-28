@@ -1,226 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piscina Huanyu | Menú Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-    <h1 class="brand">
-      HUANYU
-    </h1>
+<header class="top">
+  <div class="overlay"></div>
 
-    <div class="tag">
-      Menú Virtu
-    </div>
-
+  <div class="content">
+    <div class="sun">☀️</div>
+    <div class="brand-small">Piscina</div>
+    <h1 class="brand">HUANYU</h1>
+    <div class="tag">Menú Virtual</div>
   </div>
 
   <div class="wave"></div>
-<!-- MENU -->
+</header>
 
 <section class="menu-panel">
-
-  <h2>
-    📋 Menú
-  </h2>
-
-  <p>
-    Escoge una categoría
-  </p>
+  <h2>📋 Menú</h2>
+  <p>Escoge una categoría</p>
 
   <div class="menu-buttons">
-
-    <a href="#bebidas">
-      🥤 Bebidas
-    </a>
-
-    <a href="#granizados">
-      🍧 Granizados
-    </a>
-
-    <a href="#ninos">
-      🎈 Flotadores
-    </a>
-
+    <a href="#bebidas">🥤 Bebidas</a>
+    <a href="#granizados">🍧 Granizados</a>
+    <a href="#flotadores">🎈 Flotadores</a>
   </div>
-
 </section>
-
-<!-- PROMO -->
 
 <section class="promo">
-
-  <h2>
-    🏊 Bienvenidos a Piscina Huanyu
-  </h2>
-
-  <p>
-    Disfruta bebidas refrescantes,
-    granizados y accesorios.
-  </p>
-
+  <h2>🏊 Bienvenidos a Piscina Huanyu</h2>
+  <p>Disfruta bebidas refrescantes, granizados y accesorios.</p>
 </section>
-
-<!-- BEBIDAS -->
 
 <section id="bebidas" class="section">
-
   <div class="section-title">
-
-    <h2>
-      🥤 Bebidas
-    </h2>
-
+    <h2>🥤 Bebidas</h2>
     <span></span>
-
   </div>
 
   <div class="grid">
 
-    <article class="card">
-
-      <span class="badge">
-        Popular
-      </span>
-
+    <article class="card" onclick="abrirProducto('Soda saborizada', '$2.50', 'Manzana verde, mango, fresa y más sabores.', 'images/soda.jpg')">
       <img src="images/soda.jpg">
-
-      <h3>
-        Soda saborizada
-      </h3>
-
-      <p>
-        Manzana verde,
-        mango, fresa y más.
-      </p>
-
-      <div class="price">
-        $2.50
-      </div>
-
+      <h3>Soda saborizada</h3>
+      <p>Manzana verde, mango, fresa y más.</p>
+      <div class="price">$2.50</div>
     </article>
 
-    <article class="card">
-
+    <article class="card" onclick="abrirProducto('Mangonada', '$2.50', 'Refrescante mangonada con chamoy.', 'images/mangonada.jpg')">
       <img src="images/mangonada.jpg">
-
-      <h3>
-        Mangonada
-      </h3>
-
-      <p>
-        Refrescante con chamoy.
-      </p>
-
-      <div class="price">
-        $2.50
-      </div>
-
+      <h3>Mangonada</h3>
+      <p>Refrescante con chamoy.</p>
+      <div class="price">$2.50</div>
     </article>
 
   </div>
-
 </section>
-
-<!-- GRANIZADOS -->
 
 <section id="granizados" class="section">
-
   <div class="section-title">
-
-    <h2>
-      🍧 Granizados
-    </h2>
-
+    <h2>🍧 Granizados</h2>
     <span></span>
-
   </div>
 
   <div class="grid">
 
-    <article class="card orange">
-
+    <article class="card orange" onclick="abrirProducto('Granizado', '$2.50', 'Granizado de sabores tropicales.', 'images/granizado.jpg')">
       <img src="images/granizado.jpg">
-
-      <h3>
-        Granizados
-      </h3>
-
-      <p>
-        Sabores tropicales.
-      </p>
-
-      <div class="price">
-        $2.50
-      </div>
-
+      <h3>Granizado</h3>
+      <p>Sabores tropicales.</p>
+      <div class="price">$2.50</div>
     </article>
 
   </div>
-
 </section>
 
-<!-- FLOTADORES -->
-
-<section id="ninos" class="section">
-
+<section id="flotadores" class="section">
   <div class="section-title">
-
-    <h2>
-      🎈 Flotadores
-    </h2>
-
+    <h2>🎈 Flotadores</h2>
     <span></span>
-
   </div>
 
   <div class="grid">
 
-    <article class="card orange">
-
+    <article class="card orange" onclick="abrirProducto('Flotador infantil', '$4.50', 'Diseños variados para niños.', 'images/flotador.jpg')">
       <img src="images/flotador.jpg">
-
-      <h3>
-        Flotadores infantiles
-      </h3>
-
-      <p>
-        Diseños variados.
-      </p>
-
-      <div class="price">
-        $4.50
-      </div>
-
+      <h3>Flotador infantil</h3>
+      <p>Diseños variados.</p>
+      <div class="price">$4.50</div>
     </article>
 
   </div>
-
 </section>
-
-<!-- CONTACTO -->
 
 <section id="contacto" class="contact">
+  <h2>📲 Contacto</h2>
+  <p>Escríbenos por WhatsApp</p>
 
-  <h2>
-    📲 Contacto
-  </h2>
-
-  <p>
-    Escríbenos por WhatsApp
-  </p>
-
-  <a
-  class="whatsapp"
-  href="https://wa.me/593999999999"
-  target="_blank">
-
+  <a class="whatsapp" href="https://wa.me/593999999999" target="_blank">
     WhatsApp
-
   </a>
-
 </section>
 
 <footer>
-
   © Piscina Huanyu
-
 </footer>
+
+<div id="modal" class="modal" onclick="cerrarProducto()">
+  <div class="modal-card" onclick="event.stopPropagation()">
+    <button class="cerrar" onclick="cerrarProducto()">×</button>
+    <img id="modal-img" src="">
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+    <div id="modal-price" class="modal-price"></div>
+  </div>
+</div>
+
+<script>
+  function abrirProducto(nombre, precio, descripcion, imagen) {
+    document.getElementById("modal-title").innerText = nombre;
+    document.getElementById("modal-price").innerText = precio;
+    document.getElementById("modal-desc").innerText = descripcion;
+    document.getElementById("modal-img").src = imagen;
+    document.getElementById("modal").classList.add("activo");
+  }
+
+  function cerrarProducto() {
+    document.getElementById("modal").classList.remove("activo");
+  }
+</script>
 
 </body>
 </html>
