@@ -26,7 +26,7 @@ body{
   min-height:280px;
   background:
     linear-gradient(rgba(210,250,255,.30),rgba(210,250,255,.30)),
-    url("images/fondo-agua.jpg");
+    url("images/fondo-agua.png");
   background-size:cover;
   background-position:center;
   display:flex;
