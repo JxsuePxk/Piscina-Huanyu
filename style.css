@@ -12,7 +12,7 @@ body{
   font-family:Arial, sans-serif;
   background:
     linear-gradient(rgba(0,60,95,.25),rgba(0,60,95,.25)),
-    url("images/fondo-agua.jpg");
+    url("images/fondo-agua.png");
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
