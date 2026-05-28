@@ -10,98 +10,51 @@ html{
 
 body{
   font-family:Arial, sans-serif;
-  background:
-    linear-gradient(rgba(0,60,95,.25),rgba(0,60,95,.25)),
-    url("images/fondo-agua.png");
-  background-size:cover;
-  background-position:center;
-  background-attachment:fixed;
+  background:linear-gradient(180deg,#c7f7ff,#ffffff,#dff9ff);
   color:#071b33;
   overflow-x:hidden;
 }
 
+/* BANNER PRINCIPAL */
 .top{
   position:relative;
-  min-height:360px;
-  background:rgba(0,130,180,.25);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
+  width:100%;
   overflow:hidden;
+  border-bottom-left-radius:35px;
+  border-bottom-right-radius:35px;
 }
 
-.overlay{
-  position:absolute;
+.banner-principal img{
   width:100%;
-  height:100%;
-  background:linear-gradient(rgba(0,80,130,.55),rgba(0,190,220,.25));
-}
-
-.content{
-  position:relative;
-  z-index:2;
-  color:white;
-}
-
-.sun{
-  font-size:70px;
-  animation:float 3s ease-in-out infinite;
-}
-
-.brand-small{
-  font-size:50px;
-  font-family:cursive;
-  text-shadow:0 4px 10px #003b73;
-}
-
-.brand{
-  font-size:72px;
-  letter-spacing:5px;
-  text-shadow:0 5px 18px #003b73;
-}
-
-.tag{
-  display:inline-block;
-  margin-top:15px;
-  background:white;
-  color:#0057b8;
-  padding:12px 24px;
-  border-radius:40px;
-  font-weight:bold;
-}
-
-/* IMAGEN GRANDE ARRIBA */
-.photo-banner{
-  max-width:1100px;
-  margin:-35px auto 25px;
-  padding:12px;
-  background:white;
-  border-radius:28px;
-  box-shadow:0 15px 35px rgba(0,0,0,.25);
-  position:relative;
-  z-index:5;
-}
-
-.photo-banner img{
-  width:100%;
-  height:360px;
+  height:430px;
   object-fit:cover;
   object-position:center;
-  border-radius:20px;
   display:block;
+}
+
+/* OCULTA ELEMENTOS ANTERIORES */
+.overlay,
+.content,
+.sun,
+.brand-small,
+.brand,
+.tag,
+.photo-banner{
+  display:none;
 }
 
 .menu-panel{
   max-width:900px;
-  margin:25px auto 30px;
-  background:rgba(255,255,255,.95);
+  margin:-25px auto 30px;
+  background:rgba(255,255,255,.96);
   padding:25px;
   border-radius:30px;
   text-align:center;
-  box-shadow:0 10px 25px rgba(0,0,0,.20);
+  box-shadow:0 10px 25px rgba(0,0,0,.18);
   border:3px solid #00bcd4;
   animation:fadeUp .8s ease;
+  position:relative;
+  z-index:5;
 }
 
 .menu-panel h2{
@@ -163,16 +116,16 @@ body{
 }
 
 .section-title h2{
-  color:white;
+  color:#0057b8;
   font-size:34px;
-  text-shadow:0 4px 10px #003b73;
+  text-shadow:1px 2px 0 white;
 }
 
 .section-title span{
   display:inline-block;
   width:100px;
   height:6px;
-  background:#ffe66d;
+  background:#00bcd4;
   border-radius:30px;
   margin-top:8px;
 }
@@ -184,10 +137,10 @@ body{
 }
 
 .card{
-  background:rgba(255,255,255,.96);
+  background:rgba(255,255,255,.98);
   border-radius:30px;
   padding:18px;
-  box-shadow:0 12px 28px rgba(0,0,0,.22);
+  box-shadow:0 12px 28px rgba(0,0,0,.18);
   border:3px solid #00cfe8;
   transition:.3s;
   animation:fadeUp 1s ease;
@@ -224,7 +177,7 @@ body{
   margin-top:18px;
   font-size:40px;
   font-weight:bold;
-  color:#000;
+  color:#0057b8;
   animation:pulse 2s infinite;
 }
 
@@ -266,7 +219,6 @@ footer{
 }
 
 /* MODAL */
-
 .modal{
   position:fixed;
   top:0;
@@ -322,7 +274,7 @@ footer{
   margin-top:15px;
   font-size:45px;
   font-weight:bold;
-  color:#000;
+  color:#0057b8;
 }
 
 .cerrar{
@@ -340,7 +292,6 @@ footer{
 }
 
 /* ANIMACIONES */
-
 @keyframes float{
   0%,100%{transform:translateY(0);}
   50%{transform:translateY(-10px);}
@@ -374,7 +325,6 @@ footer{
 }
 
 /* RESPONSIVE */
-
 @media(min-width:1000px){
   .grid{
     grid-template-columns:repeat(3,1fr);
@@ -386,54 +336,19 @@ footer{
     grid-template-columns:repeat(2,1fr);
   }
 
-  .photo-banner{
-    margin:-25px 15px 25px;
-  }
-
-  .photo-banner img{
-    height:300px;
+  .banner-principal img{
+    height:340px;
   }
 }
 
 @media(max-width:700px){
-  body{
-    background-attachment:scroll;
-  }
-
-  .top{
-    min-height:280px;
-  }
-
-  .sun{
-    font-size:55px;
-  }
-
-  .brand{
-    font-size:42px;
-    letter-spacing:2px;
-  }
-
-  .brand-small{
-    font-size:34px;
-  }
-
-  .tag{
-    font-size:14px;
-  }
-
-  .photo-banner{
-    margin:-25px 12px 20px;
-    padding:8px;
-    border-radius:22px;
-  }
-
-  .photo-banner img{
-    height:210px;
-    border-radius:16px;
+  .banner-principal img{
+    height:250px;
+    object-position:center;
   }
 
   .menu-panel{
-    margin:20px 15px 25px;
+    margin:-18px 15px 25px;
     padding:20px 15px;
   }
 
