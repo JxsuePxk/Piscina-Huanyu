@@ -11,25 +11,23 @@ html{
 body{
   font-family:Arial, sans-serif;
   background:
-    linear-gradient(rgba(223,248,255,.70),rgba(255,255,255,.75)),
-    url("images/fondo-agua.png");
+    linear-gradient(rgba(0,60,95,.25),rgba(0,60,95,.25)),
+    url("images/fondo-agua.jpg");
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
-  color:#113;
+  color:#071b33;
   overflow-x:hidden;
 }
 
 .top{
   position:relative;
-  min-height:420px;
-  background:transparent;
+  min-height:360px;
+  background:rgba(0,130,180,.25);
   display:flex;
   justify-content:center;
   align-items:center;
   text-align:center;
-  border-bottom-left-radius:45px;
-  border-bottom-right-radius:45px;
   overflow:hidden;
 }
 
@@ -37,7 +35,7 @@ body{
   position:absolute;
   width:100%;
   height:100%;
-  background:linear-gradient(rgba(0,131,176,.55),rgba(0,200,255,.25));
+  background:linear-gradient(rgba(0,80,130,.55),rgba(0,190,220,.25));
 }
 
 .content{
@@ -54,47 +52,56 @@ body{
 .brand-small{
   font-size:50px;
   font-family:cursive;
+  text-shadow:0 4px 10px #003b73;
 }
 
 .brand{
-  font-size:70px;
+  font-size:72px;
   letter-spacing:5px;
-  text-shadow:0 5px 15px #004c8e;
+  text-shadow:0 5px 18px #003b73;
 }
 
 .tag{
   display:inline-block;
   margin-top:15px;
   background:white;
-  color:#0077b6;
+  color:#0057b8;
   padding:12px 24px;
   border-radius:40px;
   font-weight:bold;
-  animation:pulse 2s infinite;
 }
 
-.wave{
-  position:absolute;
-  bottom:0;
-  left:0;
+/* IMAGEN GRANDE ARRIBA */
+.photo-banner{
+  max-width:1100px;
+  margin:-35px auto 25px;
+  padding:12px;
+  background:white;
+  border-radius:28px;
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
+  position:relative;
+  z-index:5;
+}
+
+.photo-banner img{
   width:100%;
-  height:70px;
-  background:rgba(255,255,255,.75);
-  clip-path:ellipse(70% 70% at 50% 100%);
+  height:360px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:20px;
+  display:block;
 }
 
 .menu-panel{
   max-width:900px;
-  margin:-35px auto 30px;
-  background:rgba(255,255,255,.88);
+  margin:25px auto 30px;
+  background:rgba(255,255,255,.95);
   padding:25px;
   border-radius:30px;
   text-align:center;
-  box-shadow:0 10px 25px rgba(0,0,0,.12);
-  position:relative;
-  z-index:5;
+  box-shadow:0 10px 25px rgba(0,0,0,.20);
+  border:3px solid #00bcd4;
   animation:fadeUp .8s ease;
-  backdrop-filter:blur(5px);
 }
 
 .menu-panel h2{
@@ -104,7 +111,7 @@ body{
 
 .menu-panel p{
   margin-bottom:18px;
-  color:#444;
+  color:#333;
 }
 
 .menu-buttons{
@@ -117,7 +124,7 @@ body{
 .menu-buttons a{
   text-decoration:none;
   color:white;
-  background:linear-gradient(135deg,#0077b6,#00bcd4);
+  background:linear-gradient(135deg,#0057b8,#00bcd4);
   padding:14px 22px;
   border-radius:40px;
   font-weight:bold;
@@ -134,9 +141,8 @@ body{
   padding:35px;
   border-radius:30px;
   text-align:center;
-  background:linear-gradient(135deg,rgba(255,230,109,.9),rgba(78,205,196,.9));
-  animation:fadeUp 1s ease;
-  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  background:linear-gradient(135deg,#ffe66d,#00d4c8);
+  box-shadow:0 10px 25px rgba(0,0,0,.20);
 }
 
 .promo h2{
@@ -157,16 +163,16 @@ body{
 }
 
 .section-title h2{
-  color:#0057b8;
+  color:white;
   font-size:34px;
-  text-shadow:1px 2px 0 white;
+  text-shadow:0 4px 10px #003b73;
 }
 
 .section-title span{
   display:inline-block;
   width:100px;
   height:6px;
-  background:#ff914d;
+  background:#ffe66d;
   border-radius:30px;
   margin-top:8px;
 }
@@ -178,16 +184,15 @@ body{
 }
 
 .card{
-  background:rgba(255,255,255,.90);
+  background:rgba(255,255,255,.96);
   border-radius:30px;
   padding:18px;
-  box-shadow:0 10px 25px rgba(0,0,0,.12);
-  border:3px solid #69e2ef;
+  box-shadow:0 12px 28px rgba(0,0,0,.22);
+  border:3px solid #00cfe8;
   transition:.3s;
   animation:fadeUp 1s ease;
   cursor:pointer;
   overflow:hidden;
-  backdrop-filter:blur(4px);
 }
 
 .card:hover{
@@ -211,7 +216,7 @@ body{
 
 .card p{
   margin-top:10px;
-  color:#555;
+  color:#222;
   line-height:1.6;
 }
 
@@ -219,7 +224,7 @@ body{
   margin-top:18px;
   font-size:40px;
   font-weight:bold;
-  color:black;
+  color:#000;
   animation:pulse 2s infinite;
 }
 
@@ -227,10 +232,11 @@ body{
   max-width:900px;
   margin:50px auto;
   padding:45px 20px;
-  background:linear-gradient(135deg,rgba(0,59,115,.95),rgba(0,119,182,.95));
+  background:linear-gradient(135deg,#003b73,#0057b8);
   border-radius:35px;
   text-align:center;
   color:white;
+  box-shadow:0 12px 28px rgba(0,0,0,.25);
 }
 
 .contact h2{
@@ -248,20 +254,18 @@ body{
   border-radius:40px;
   font-size:20px;
   font-weight:bold;
-  transition:.3s;
-  animation:pulse 2s infinite;
 }
 
 footer{
   margin-top:40px;
-  background:rgba(0,188,212,.95);
+  background:#003b73;
   color:white;
   text-align:center;
   padding:20px;
   font-weight:bold;
 }
 
-/* VENTANA EXPANDIDA */
+/* MODAL */
 
 .modal{
   position:fixed;
@@ -269,7 +273,7 @@ footer{
   left:0;
   width:100%;
   height:100%;
-  background:rgba(0,0,0,.35);
+  background:rgba(0,0,0,.45);
   backdrop-filter:blur(8px);
   display:none;
   justify-content:center;
@@ -300,7 +304,6 @@ footer{
   object-fit:cover;
   object-position:center;
   border-radius:25px;
-  background:#f5fbff;
 }
 
 .modal-card h2{
@@ -353,7 +356,6 @@ footer{
     opacity:0;
     transform:translateY(30px);
   }
-
   to{
     opacity:1;
     transform:translateY(0);
@@ -365,7 +367,6 @@ footer{
     opacity:0;
     transform:scale(.8);
   }
-
   to{
     opacity:1;
     transform:scale(1);
@@ -384,17 +385,23 @@ footer{
   .grid{
     grid-template-columns:repeat(2,1fr);
   }
+
+  .photo-banner{
+    margin:-25px 15px 25px;
+  }
+
+  .photo-banner img{
+    height:300px;
+  }
 }
 
 @media(max-width:700px){
   body{
     background-attachment:scroll;
-    background-size:cover;
-    background-position:center;
   }
 
   .top{
-    min-height:330px;
+    min-height:280px;
   }
 
   .sun{
@@ -414,8 +421,19 @@ footer{
     font-size:14px;
   }
 
+  .photo-banner{
+    margin:-25px 12px 20px;
+    padding:8px;
+    border-radius:22px;
+  }
+
+  .photo-banner img{
+    height:210px;
+    border-radius:16px;
+  }
+
   .menu-panel{
-    margin:-30px 15px 25px;
+    margin:20px 15px 25px;
     padding:20px 15px;
   }
 
